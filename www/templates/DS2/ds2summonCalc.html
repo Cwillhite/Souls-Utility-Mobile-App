@@ -1,0 +1,34 @@
+<ion-view view-title="DS2 Summon Calculator">
+  <ion-content>
+    <div class="image">
+      <img src="img/darksoulsimage.jpg" width="100%">
+      <label class="item">
+        <span class="input-label">Min: {{min}}</span>
+      </label>
+      <label class="item">
+        <span class="input-label">Max: {{max}}</span>
+      </label>
+      <label class="item" ng-if="tool.ring">
+        <span class="input-label">Min with Ring: {{minring}}</span>
+      </label>
+      <label class="item" ng-if="tool.ring">
+        <span class="input-label">Max with Ring: {{maxring}}</span>
+      </label>
+    </div>
+    <form ng-submit="ds2calculate(soul_Memory, tool)">
+      <div class="list">
+          <label class="item item-input">
+            <span class="input-label">Soul Memory: </span>
+            <input type="number" ng-model="soul_Memory">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Summon Item: </span>
+            <select ng-model="tool" ng-options="c.item for c in items"></select>
+          </label>
+          <label class="item">
+            <button class="button button-block button-dark" type="submit">Generate Range</button>
+          </label>
+      </div>
+    </form>
+	</ion-content>
+</ion-view>

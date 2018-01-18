@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.ionicframework.soulsutilityapp8945879" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+      <platform name="ios">
+              <!-- iOS 8.0+ -->
+              <!-- iPhone 6 Plus  -->
+              <icon src="www/img/bonfire.gif" width="180" height="180" />
+              <!-- iOS 7.0+ -->
+              <!-- iPhone / iPod Touch  -->
+              <icon src="www/img/bonfire.gif" width="60" height="60" />
+              <icon src="www/img/bonfire.gif" width="120" height="120" />
+              <!-- iPad -->
+              <icon src="www/img/bonfire.gif" width="76" height="76" />
+              <icon src="www/img/bonfire.gif" width="152" height="152" />
+              <!-- iOS 6.1 -->
+              <!-- Spotlight Icon -->
+              <icon src="www/img/bonfire.gif" width="40" height="40" />
+              <icon src="www/img/bonfire.gif" width="80" height="80" />
+              <!-- iPhone / iPod Touch -->
+              <icon src="www/img/bonfire.gif" width="57" height="57" />
+              <icon src="www/img/bonfire.gif" width="114" height="114" />
+              <!-- iPad -->
+              <icon src="www/img/bonfire.gif" width="72" height="72" />
+              <icon src="www/img/bonfire.gif" width="144" height="144" />
+              <!-- iPhone Spotlight and Settings Icon -->
+              <icon src="www/img/bonfire.gif" width="29" height="29" />
+              <icon src="www/img/bonfire.gif" width="58" height="58" />
+              <!-- iPad Spotlight and Settings Icon -->
+              <icon src="www/img/bonfire.gif" width="50" height="50" />
+              <icon src="www/img/bonfire.gif" width="100" height="100" />
+     </platform>
+  <name>SoulsUtilityApp</name>
+  <description>
+        An Ionic Framework and Cordova project.
+    </description>
+  <author email="willhc1@yahoo.com" href="http://example.com.com/">
+      Colton Willhite
+    </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="android-minSdkVersion" value="16"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+</widget>

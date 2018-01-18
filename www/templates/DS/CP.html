@@ -1,0 +1,117 @@
+<ion-view view-title="Character Builder">
+  <ion-content>
+    <!-- action="https://www.mugenmonkey.com/darksouls" -->
+    <form ng-submit="calculate(cVT, cAT, cEN, cSTR, cDX, cRES, cINT, cFAT)" method="POST">
+      <label class="item item-input">
+        <span class="input-label">Start Class: </span>
+        <select ng-model="build" ng-change="updateBase(build)" ng-options="c.startclass for c in initial"></select>
+      </label>
+      <label class="item item-input">
+  		    <span class="input-label">Vitality:</span>
+          <span class="input-label">Base - {{build.baseVT}}; {{cVT}}</span>
+  		    <input type="number" ng-model="cVT"min="{{build.baseVT}}" maxlength="2">
+		  </label>
+      <label class="item item-input">
+  	  	<span class="input-label">Attunement:</span>
+        <span class="input-label">Base - {{build.baseAT}}; {{cAT}}</span>
+  	  	<input type="number" ng-model="cAT" min="{{build.baseAT}}" maxlength="2">
+	  	</label>
+      <label class="item item-input">
+    		<span class="input-label">Endurance:</span>
+        <span class="input-label">Base - {{build.baseEN}}; {{cEN}}</span>
+    		<input type="number" ng-model="cEN" min="{{build.baseEN}}" maxlength="2">
+	  	</label>
+      <label class="item item-input">
+    		<span class="input-label">Strength:</span>
+        <span class="input-label">Base - {{build.baseSTR}}; {{cSTR}}</span>
+    		<input type="number" ng-model="cSTR" min="{{build.baseSTR}}" maxlength="2">
+	  	</label>
+      <label class="item item-input">
+  		  <span class="input-label">Dexterity:</span>
+        <span class="input-label">Base - {{build.baseDX}}; {{cDX}}</span>
+  	  	<input type="number" ng-model="cDX" min="{{build.baseDX}}" maxlength="2">
+	  	</label>
+      <label class="item item-input">
+  		  <span class="input-label">Resistance:</span>
+        <span class="input-label">Base - {{build.baseRES}}; {{cRES}}</span>
+  	  	<input type="number" ng-model="cRES" min="{{build.baseRES}}" maxlength="2">
+	  	</label>
+      <label class="item item-input">
+  		  <span class="input-label">Intelligence:</span>
+        <span class="input-label">Base - {{build.baseINT}}; {{cINT}}</span>
+  	  	<input type="number" ng-model="cINT" min="{{build.baseINT}}" maxlength="2">
+	  	</label>
+      <label class="item item-input">
+  	  	<span class="input-label">Faith:</span>
+        <span class="input-label">Base - {{build.baseFAT}}; {{cFAT}}</span>
+    		<input type="number" ng-model="cFAT" min="{{build.baseFAT}}" maxlength="2">
+	  	</label>
+      <label class="item">
+        <button class="button button-block button-dark" type="submit">Generate Stats</button>
+      </label>
+    </form>
+    <ion-list>
+      <!-- HP -->
+      <label class="item" uid="hth">
+        <span class="input-label">HP: {{cHP}}</span>
+      </label>
+      <!-- Stamina -->
+      <label class="item" uid="sta">
+        <span class="input-label">Stamina: {{cSTA}}</span>
+      </label>
+      <!-- Equip Load -->
+      <label class="item" uid="eqp">
+        <span class="input-label">Equip Load: {{cEL}}</span>
+      </label>
+      <!-- # Attument Slots -->
+      <label class="item" uid="eqp">
+        <span class="input-label">Attument slots: {{cATS}}</span>
+      </label>
+      <!-- Physical Def -->
+      <label class="item" uid="phd">
+        <span class="input-label">Physical Def: {{phisical}}</span>
+      </label>
+      <!-- Strike Def -->
+      <label class="item" uid="shd">
+        <span class="input-label">VS Strike: {{phisical}}</span>
+      </label>
+      <!-- Slash Def -->
+      <label class="item" uid="sls">
+        <span class="input-label">VS Slash: {{phisical}}</span>
+      </label>
+      <!-- Thrust Def -->
+      <label class="item" uid="tur">
+        <span class="input-label">VS Thrust: {{phisical}}</span>
+      </label>
+      <!-- Magig Def -->
+      <label class="item" uid="mag">
+        <span class="input-label">Magic Def: {{magic}}</span>
+      </label>
+      <!-- Flame Def -->
+      <label class="item" uid="fla">
+        <span class="input-label">Flame Def: {{magic}}</span>
+      </label>
+      <!-- Lightning Def -->
+      <label class="item" uid="lgh">
+        <span class="input-label">Lightning Def: {{lightning}}</span>
+      </label>
+      <form method="POST">
+        <label class="item item-input">
+          <span class="input-label">Weapon: </span>
+          <select ng-model="weapon" ng-change="calculate2(cSTR, cDX, cINT, cFAT, weapon, arrow)" ng-options="c.weapon for c in weapons"></select>
+        </label>
+        <label class="item item-input" ng-if="weapon.type == 'Bow'">
+          <span class="input-label">Arrows: </span>
+          <select ng-model="arrow" ng-change="calculate2(cSTR, cDX, cINT, cFAT, weapon, arrow)" ng-options="c.arrow for c in arrows"></select>
+        </label>
+        <label class="item item-input" ng-if="weapon.type == 'Crossbow'">
+          <span class="input-label">Bolts: </span>
+          <select ng-model="arrow" ng-change="calculate2(cSTR, cDX, cINT, cFAT, weapon, arrow)" ng-options="c.arrow for c in arrows"></select>
+        </label>
+      </form>
+      <label class="item item-input" uid="shd">
+        <span class="input-label">Damage: {{damage}}</span>
+      </label>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,70 @@
+<ion-view view-title="Knights Honor">
+  <ion-content>
+      <div class="list">
+        <div class="item item-divider">
+          Soul/Boss Weapons
+        </div>
+      <ion-checkbox class="checkbox-dark" ng-model="items[0].valid"  ng-change="editMember(0,  items[0].valid)">Moonlight Butterfly Horn</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[1].valid"  ng-change="editMember(1,  items[1].valid)">Crystal Ring Shield</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[2].valid"  ng-change="editMember(2,  items[2].valid)">Quelaag's Furysword</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[3].valid"  ng-change="editMember(3,  items[3].valid)">Chaos Blade	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[4].valid"  ng-change="editMember(4,  items[4].valid)">Greatsword of Artorias (Cursed)</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[5].valid"  ng-change="editMember(5,  items[5].valid)">Greatsword of Artorias</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[6].valid"  ng-change="editMember(6,  items[6].valid)">Greatshield of Artorias</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[7].valid"  ng-change="editMember(7,  items[7].valid)">Golem Axe</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[8].valid"  ng-change="editMember(8,  items[8].valid)">Dragon Bone Fist</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[9].valid"  ng-change="editMember(9,  items[9].valid)">Lifehunt Scythe	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[10].valid" ng-change="editMember(10, items[10].valid)">Dragonslayer Spear</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[11].valid" ng-change="editMember(11, items[11].valid)">Smough's Hammer</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[12].valid" ng-change="editMember(12, items[12].valid)">Darkmoon Bow</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[13].valid" ng-change="editMember(13, items[13].valid)">Tin Darkmoon Catalyst</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[14].valid" ng-change="editMember(14, items[14].valid)">Great Lord Greatsword</ion-checkbox>
+      <div class="item item-divider">
+        Tail Weapons
+      </div>
+      <ion-checkbox class="checkbox-dark" ng-model="items[15].valid" ng-change="editMember(15, items[15].valid)">Drake Sword</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[16].valid" ng-change="editMember(16, items[16].valid)">Dragon King Greataxe</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[17].valid" ng-change="editMember(17, items[17].valid)">Priscilla's Dagger</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[18].valid" ng-change="editMember(18, items[18].valid)">Moonlight Greatsword</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[19].valid" ng-change="editMember(19, items[19].valid)">Dragon Greatsword</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[20].valid" ng-change="editMember(20, items[20].valid)">Gargoyle Tail Axe</ion-checkbox>
+      <div class="item item-divider">
+        Covenant Weapons
+      </div>
+      <ion-checkbox class="checkbox-dark" ng-model="items[21].valid" ng-change="editMember(21, items[21].valid)">Gravelord Sword</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[22].valid" ng-change="editMember(22, items[22].valid)">Dark Hand</ion-checkbox>
+      <div class="item item-divider">
+        Dropped Weapons
+      </div>
+      <ion-checkbox class="checkbox-dark" ng-model="items[23].valid" ng-change="editMember(23, items[23].valid)">Black Knight Sword	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[24].valid" ng-change="editMember(24, items[24].valid)">Black Knight Greatsword	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[25].valid" ng-change="editMember(25, items[25].valid)">Black Knight Greataxe	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[26].valid" ng-change="editMember(26, items[26].valid)">Black Knight Halberd	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[27].valid" ng-change="editMember(27, items[27].valid)">Black Knight Shield	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[28].valid" ng-change="editMember(28, items[28].valid)">Channeler's Trident	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[29].valid" ng-change="editMember(29, items[29].valid)">Crescent Axe	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[30].valid" ng-change="editMember(30, items[30].valid)">Crest Shield</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[31].valid" ng-change="editMember(31, items[31].valid)">Demon's Catalyst</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[32].valid" ng-change="editMember(32, items[32].valid)">Giant's Halberd	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[33].valid" ng-change="editMember(33, items[33].valid)">Izalith Catalyst	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[34].valid" ng-change="editMember(34, items[34].valid)">Silver Knight Straight Sword	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[35].valid" ng-change="editMember(35, items[35].valid)">Silver Knight Spear	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[36].valid" ng-change="editMember(36, items[36].valid)">Silver Knight Shield</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[37].valid" ng-change="editMember(37, items[37].valid)">Stone Greatsword	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[38].valid" ng-change="editMember(38, items[38].valid)">Stone Greatshield	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[39].valid" ng-change="editMember(39, items[39].valid)">Grant	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[40].valid" ng-change="editMember(40, items[40].valid)">Sanctus	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[41].valid" ng-change="editMember(41, items[41].valid)">Dragon Crest Shield	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[42].valid" ng-change="editMember(42, items[42].valid)">Havel's Greatshield	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[43].valid" ng-change="editMember(43, items[43].valid)">Dragon Tooth	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[44].valid" ng-change="editMember(44, items[44].valid)">Dragonslayer Greatbow	</ion-checkbox>
+      <div class="item item-divider">
+        Chest Items
+      </div>
+      <ion-checkbox class="checkbox-dark" ng-model="items[45].valid" ng-change="editMember(45, items[45].valid)">Velka's Rapier	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[46].valid" ng-change="editMember(46, items[46].valid)">Astora's Straight Sword	</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[47].valid" ng-change="editMember(47, items[47].valid)">Black Iron Greatshield</ion-checkbox>
+      <ion-checkbox class="checkbox-dark" ng-model="items[48].valid" ng-change="editMember(48, items[48].valid)">Effigy Shield</ion-checkbox>
+    </div>
+  </ion-content>
+</ion-view>

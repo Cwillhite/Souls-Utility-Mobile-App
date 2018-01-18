@@ -1,0 +1,24 @@
+<ion-view view-title="Summon Calculator">
+  <ion-content>
+    <div class="image">
+      <img src="img/darksoulsimage.jpg" width="100%">
+      <label class="item">
+        <span class="input-label">Min: {{dsrmin}}</span>
+      </label>
+      <label class="item">
+        <span class="input-label">Max: {{dsrmax}}</span>
+      </label>
+    </div>
+    <form ng-submit="dscalculate(dslevel)">
+      <div class="list">
+          <label class="item item-input">
+            <span class="input-label">Player Level: </span>
+            <input type="number" ng-model="dslevel">
+          </label>
+          <label class="item">
+            <button class="button button-block button-dark" type="submit">Generate Range</button>
+          </label>
+      </div>
+    </form>
+	</ion-content>
+</ion-view>
